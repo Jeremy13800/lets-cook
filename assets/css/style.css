@@ -1,0 +1,26 @@
+@import "variables.css";
+@import "reboot.css";
+@import "utilities.css";
+@import "custom.css";
+
+.container {
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main {
+  padding: 20px;
+}
+
+.recipe__title {
+  text-align: center;
+}
+
+.recipe__ingredients {
+  color: white;
+  text-align: center;
+}
