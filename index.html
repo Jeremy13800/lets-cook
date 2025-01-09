@@ -10,9 +10,34 @@
     <header class="mx-auto"></header>
     <main>
       <section class="mx-auto flex">
-        <h1>All recipes</h1>
-        <!--Search bar-->
+        <img src="assets/images/logo.svg" alt="logo" class="logo" />
       </section>
+      <div class="container-content flex fw-wrap jc-between ai-center">
+        <div class="flex fw-wrap jc-between ai-center search">
+          <!-- liste deroulante pour selectionner les filtres -->
+          <input
+            class="search-bar"
+            type="search"
+            placeholder="Rechercher un plat ..."
+          />
+          <select id="filter">
+            <option value="10">Limite à 10</option>
+            <option value="20">Limite à 20</option>
+          </select>
+          <!--Tri des resultats-->
+          <select id="sort">
+            <option value="name-asc">Nom (A-Z)</option>
+            <option value="name-desc">Nom (Z-A)</option>
+          </select>
+          <!-- Tri par tags-->
+          <!-- <button id="searchBtn">Rechercher</button> -->
+        </div>
+        <div class="selTag">
+          <select id="tagsFilter">
+            <option class="tag" value="">Selectionnez un plat</option>
+          </select>
+        </div>
+      </div>
       <div class="container mx-auto recipes cards">
         <!-- cards Desktop 4 col-->
         <!-- cards tablets 2 col-->

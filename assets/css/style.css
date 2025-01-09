@@ -2,10 +2,6 @@
 @import "reboot.css";
 @import "utilities.css";
 @import "custom.css";
-
-.container {
-}
-
 header {
   display: flex;
   justify-content: space-between;
@@ -16,11 +12,65 @@ main {
   padding: 20px;
 }
 
-.recipe__title {
+h1 {
+  margin: 10px;
+  background-color: ;
+}
+
+/* .recipe__title {
+  text-align: center;
+  color: white;
+  opacity: 0.9;
+} */
+.recipe__ingredients {
   text-align: center;
 }
 
-.recipe__ingredients {
-  color: white;
-  text-align: center;
+.search-bar {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+input {
+  padding: 10px;
+  border-radius: 5px;
+  min-width: 50%;
+  background-color: white;
+}
+
+.search {
+  width: 40%;
+}
+
+body {
+  background-color: white;
+}
+
+.logo {
+  width: 300px;
+  height: 100px;
+  margin: 12px;
+}
+
+.container-content,
+section,
+.search,
+.selTag {
+  background-color: var(--theme1);
+}
+
+#filter,
+#sort,
+#tagsFilter {
+  background-color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#tagsFilter {
+  margin-right: 15px;
 }

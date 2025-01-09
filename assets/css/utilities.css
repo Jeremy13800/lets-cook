@@ -25,9 +25,20 @@
 .flex {
   display: flex;
 }
+.fw-wrap {
+  flex-wrap: wrap;
+}
 
 .gap-1 {
   gap: 10px;
+}
+
+.jc-between {
+  justify-content: space-between;
+}
+
+.ai-center {
+  align-items: center;
 }
 
 /*  SIZING */
