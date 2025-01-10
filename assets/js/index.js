@@ -8,7 +8,7 @@ const container = document.querySelector(".container");
 
 // Variables globales
 let keyWord = "";
-let currentLimit = 30; // Par défaut : 30 plats
+let currentLimit = 10; // Par défaut : 10 plats
 let currentSort = "name-asc"; // Par défaut : tri A-Z
 let currentTag = "";
 
@@ -66,7 +66,7 @@ const displayData = async () => {
       <img class="recipe__image" src="${element.image}" alt="${element.name}">
       <h2 class="recipe__title">${element.name}</h2>
       <p class="recipe__ingredients">${element.ingredients}</p>
-      <a href="single.html?id=1" target="blank" class="recipe__link">En savoir plus</a>
+      <a href="recette.html?id=${element.id}" class="recipe__link">En savoir plus</a>
     `;
     container.appendChild(article);
   });

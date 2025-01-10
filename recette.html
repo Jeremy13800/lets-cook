@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header class="mx-auto"></header>
+    <main>
+      <div class="main-container">
+        <section class="mx-auto flex">
+          <a href="index.html">
+            <img src="assets/images/logo.svg" alt="logo" class="logo" />
+          </a>
+        </section>
+        <div class="container-content flex fw-wrap jc-between ai-center">
+          <div class="flex fw-wrap jc-between ai-center search">
+            <!-- liste deroulante pour selectionner les filtres -->
+            <input
+              class="search-bar"
+              type="search"
+              placeholder="Rechercher un plat ..."
+            />
+            <select id="filter">
+              <option value="10">Limite à 10</option>
+              <option value="20">Limite à 20</option>
+            </select>
+            <!--Tri des resultats-->
+            <select id="sort">
+              <option value="name-asc">Nom (A-Z)</option>
+              <option value="name-desc">Nom (Z-A)</option>
+            </select>
+            <!-- Tri par tags-->
+            <!-- <button id="searchBtn">Rechercher</button> -->
+          </div>
+          <div class="selTag">
+            <select id="tagsFilter">
+              <option class="tag" value="">Selectionnez un plat</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="single mx-auto"></div>
+    </main>
+    <footer></footer>
+    <script src="assets/js/recette.js" type="module"></script>
+  </body>
+</html>

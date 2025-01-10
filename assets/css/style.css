@@ -14,7 +14,6 @@ main {
 
 h1 {
   margin: 10px;
-  background-color: ;
 }
 
 /* .recipe__title {
@@ -56,6 +55,11 @@ body {
   margin: 12px;
 }
 
+a {
+  background-color: var(--theme1);
+  transition: color 0.3s ease;
+}
+
 .container-content,
 section,
 .search,
@@ -71,6 +75,20 @@ section,
   border-radius: 5px;
 }
 
+#filter,
+#sort {
+  margin-right: 20px;
+}
+
+#sort {
+  margin-right: 80px;
+}
+
 #tagsFilter {
   margin-right: 15px;
+}
+
+.recipe__image {
+  width: 50%;
+  height: auto;
 }

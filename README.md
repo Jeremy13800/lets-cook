@@ -53,34 +53,40 @@ Ce projet a été conçu pour :
 
 ```
 .
-├── assets
-│   ├── css
-│   │   ├── custom.css
-│   │   ├── reboot.css
-│   │   ├── style.css
-│   │   ├── utilities.css
-│   │   └── variables.css
-│   ├── images
-│   │   └── logo.svg
-│   └── js
-│       ├── index.js
-│       └── Recipe.js
-├── index.html
+├── Lets-Cook-V1.md
 ├── README.md
+├── assets
+│   ├── css
+│   │   ├── custom.css
+│   │   ├── reboot.css
+│   │   ├── style.css
+│   │   ├── utilities.css
+│   │   └── variables.css
+│   ├── images
+│   │   ├── bars-solid.svg
+│   │   ├── cooking.svg
+│   │   ├── logo-et-icones.zip
+│   │   ├── logo.svg
+│   │   ├── search-solid-white.svg
+│   │   └── street.jpg
+│   └── js
+│       ├── index-func-async.js
+│       └── index.js
+├── index.html
 └── recette.html
 ```
 
 ### Points clés de l'architecture :
 
-1.  **\*\***\*\***\*\***\_\_\_\***\*\*\*\*\*\*\*** :\*\*
+1.  Séparation des responsabilités :
 
-- **\*\***\*\***\*\***\*\***\*\***\*\***\*\***\_**\*\***\*\***\*\***\*\***\*\***\*\***\*\***
-- **\*\***\*\***\*\***\*\***\*\***\*\***\*\***\_**\*\***\*\***\*\***\*\***\*\***\*\***\*\***
+- Les styles sont centralisés dans assets/css/style.css.
+- Le fichier index.js gère toute la logique JavaScript.
 
-2.  **\*\***\*\***\*\***\_\_\_\***\*\*\*\*\*\*\*** :\*\*
+2.  HTML sémantique et modulaire :
 
-- **\*\***\*\***\*\***\*\***\*\***\*\***\*\***\_**\*\***\*\***\*\***\*\***\*\***\*\***\*\***
-- **\*\***\*\***\*\***\*\***\*\***\*\***\*\***\_**\*\***\*\***\*\***\*\***\*\***\*\***\*\***
+- Structure claire avec des balises sémantiques comme header, main, et footer.
+- Utilisation de classes CSS pour la personnalisation.
 
 ## Ressources utilisées 📚
 
@@ -117,19 +123,23 @@ Ce projet a été conçu pour :
 
 - Récupération des tags :
 
+  - Appel à l'endpoint /tags pour charger les options dynamiques du filtre par tags.
+
+  - Génération dynamique des options du sélecteur avec capitalisation automatique des noms.
+
 ### Déploiement
 
 - Le projet sera déployé sur **Vercel**. Accédez à l'application ici : [Let's Cook](https://lets-cook.vercel.app).
 
 ## Auteur
 
-- **Nom :** \***\*\*\*\*\*\*\***\_\_\_\***\*\*\*\*\*\*\***
-- **Formation :** \***\*\*\*\*\***\_\_\***\*\*\*\*\***
+- Nom : Jérémy Cailleux
+- Formation : Developpeur Web et Web Mobile ( DWWM )
 - **Objectif :** Validation des compétences en création et déploiement d'applications web.
 
 ## Améliorations possibles 🚀
 
-1. ***
-2. ***
-3. ***
-4. ***
+1. Ajouter des animations pour améliorer l'expérience utilisateur.
+2. Simplifier les options du filtre pour le rendre plus intuitif.
+3. Ajouter une image ou un message par défaut lorsque aucun résultat n'est trouvé.
+4. Intégrer une fonctionnalité de favoris pour sauvegarder les recettes préférées.
